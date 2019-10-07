@@ -1,37 +1,15 @@
 /*Declarations used by entire website*/
 
-html {
-    position: relative;
-    min-height: 100%;
-
-  }
-
-  body {
-    margin-bottom: 60px; /* Margin bottom by footer height */
+body {
     font-family: 'Times New Roman', Times, serif;
-  
-  }
-
-  .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px; /* Set the fixed height of the footer here */
-    line-height: 60px; /* Vertically center the text there */
-    background-color: #f5f5f5;
-  }
-
+}
 
 .navbar-custom {
     background-color: gray;
     height: 140px;
 }
 
-
-#navbutton {
-    /* font-family: "Times New Roman", Times, serif; */
-    /* height: 45px;
-    width: 207px;  */
+#nameplate {
     background-color: #6d695c;
     border-style: solid;
     border-width: 5px;
@@ -41,32 +19,6 @@ html {
     border-radius: 15px;
     text-align: center;
     font-size: xx-large;
-    
-}
-
-footer {
-    position: relative;
-    height: 70px;
-    width: 100%;
-    background-color:rgb(62, 66, 55);
-    border-top: 10px solid darkred;
-}
-
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    /* Set the fixed height of the footer here */
-    height: 60px;
-    line-height: 60px; /* Vertically center the text there */
-    background-color: #f5f5f5;
-  }
-
-hr {/*just below 2nd header*/
-    margin-top: 85px;
-    height: 5px;
-    color: #333;
-    background-color: darkred;
 }
 
     /*buttons-entire site*/
@@ -75,9 +27,8 @@ hr {/*just below 2nd header*/
     font-size: small;
     text-align: center;
     color: cornsilk;
-    /* float: left; */
-    /* height: 20px;
-    width: 50px; */
+    float: right;
+    bottom: 0;
     background-color: rgb(62, 66, 55);
     border-radius: 10px;
     padding: 10px;
@@ -88,57 +39,14 @@ hr {/*just below 2nd header*/
     transition-duration: 0.4s;
 }
 
-.button:hover {
+.navbuttons:hover {
     background-color: rgb(88, 141, 77); 
-    color: white;
-}
-
-#about {/*navigational button*/
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: 288px;
-}
-
-#portfolio {/*navigational button*/
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: 362px;
-}
-
-#contact {/*navigational button*/
-    position: absolute;
-    right:0;
-    bottom: 0;
-    left: 50%;
-    margin-left: 436px;
-}
-
-/*About Page specific declarations*/
-
-#about-content {/*includes h2, img, <p>*/
-    /* position: absolute; */
-    /* width: 960px; */
-    height: auto;
-    margin: 0 auto;
-    background-color: cornsilk;
-    margin-top: 55px;
-    /* left: 50%; */
-    /* margin-left: -510px; */
-    margin-bottom: 10%;
-    border-radius: 15px;
-    padding: 30px;
+    color: cornsilk;
 }
 
 #main1 {/*argyle background*/
     width: 100%;
     height: 970px;
-    /* position: relative; */
-    /* top: 0;
-    bottom: 0; */
     background-color: #6d695c;
     background-image:
         repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
@@ -148,11 +56,39 @@ hr {/*just below 2nd header*/
     background-size: 70px 120px;
 }
 
+hr {/*just below 2nd header*/
+    margin-top: 85px;
+    height: 5px;
+    color: #333;
+    background-color: darkred;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    line-height: 60px; /* Vertically center the text there */
+    background-color:rgb(62, 66, 55);
+    border-top: 10px solid darkred;
+  }
+
+/*About Page specific declarations*/
+
+#about-content {/*includes h2, img, <p>*/
+    background-color: cornsilk;
+    margin-top: 55px;
+    margin-bottom: 55px;
+    border-radius: 15px;
+    padding: 30px;
+}
+
 h2 {
     position: absolute;
     margin-left: 30px;
     font-size: xx-large;
-   margin-top: 20px;
+    margin-top: 20px;
 }
 
 #rickpic {
@@ -162,7 +98,7 @@ h2 {
     margin-left: 20px;
     margin-top: 20px;
     margin-right: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     transform: rotate(270deg);
 }
 
