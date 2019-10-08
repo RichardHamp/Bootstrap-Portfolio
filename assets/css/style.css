@@ -2,12 +2,25 @@
 
 body {
     font-family: 'Times New Roman', Times, serif;
+    height: 100%;
+    background: rgb(62, 66, 55);
 }
 
 .navbar-custom {
     background-color: gray;
     height: 140px;
 }
+
+#page-content {
+    flex: 1 0 auto;
+  }
+  
+  #sticky-footer {
+    flex-shrink: none;
+    width: 100%;
+    height: 60px;
+    border-top: 10px solid darkred;
+  }
 
 #nameplate {
     background-color: #6d695c;
@@ -18,6 +31,9 @@ body {
     padding: 15px;
     border-radius: 15px;
     font-size: xx-large;
+    position: absolute;
+    left: 20%;
+    bottom: 0;
 }
 
     /*buttons-entire site*/
@@ -36,6 +52,12 @@ body {
     border-color: #6d695c;
     -webkit-transition-duration: 0.4s; 
     transition-duration: 0.4s;
+}
+
+.buttonX {
+    left: 70%;
+    position: absolute;
+    bottom: 0;
 }
 
 .navbuttons:hover {
@@ -65,17 +87,6 @@ hr {/*just below 2nd header*/
     color: #333;
     background-color: darkred;
 }
-
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    /* Set the fixed height of the footer here */
-    height: 60px;
-    line-height: 60px; /* Vertically center the text there */
-    background-color:rgb(62, 66, 55);
-    border-top: 10px solid darkred;
-  }
 
 /*About Page specific declarations*/
 
