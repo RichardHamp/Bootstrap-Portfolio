@@ -1,28 +1,86 @@
 <!DOCTYPE html>
-<html>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <title>Bootstrap Portfolio</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/style.css">
     </head>
-    <body>
-        <nav class="navbar navbar-light bg-light">
-            <div class="col-md-1"></div>
-            <div class="col-md-3">
-            <a class="navbar-brand"><h1>Richard Hamp</h1></a>
+  
+    <body class="d-flex flex-column ">
+        <nav class="navbar navbar-custom">
+                <a id="nameplate">Richard Hamp</a>
+            <div class="btn-group buttonX" role="group" aria-label="Basic example">
+              <a class="navbuttons" href="index.html" class="buttonX">About</a>
+              <a class="navbuttons" href="portfolio.html" class="buttonX">Portfolio</a>
+              <a class="navbuttons" href="contact.html" class="buttonX">Contact</a>
+            </div>
+          </div>
+        </nav>
+
+      <main role="main" main id="main1" class="flex-shrink-0">
+        <div class="container">
+            <h2 class="text-center">Contac Form</h2>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6 pb-5">
+        
+        
+                            <!--Form with header-->
+        
+                            <form action="mail.php" method="post">
+                                <div class="card border-primary rounded-0">
+                                    <div class="card-header p-0">
+                                        <div class="bg-info text-white text-center py-2">
+                                            <h3><i class="fa fa-envelope"></i> Contactanos</h3>
+                                            <p class="m-0">Con gusto te ayudaremos</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-3">
+        
+                                        <!--Body-->
+                                        <div class="form-group">
+                                            <div class="input-group mb-2">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
+                                                </div>
+                                                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre y Apellido" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-group mb-2">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
+                                                </div>
+                                                <input type="email" class="form-control" id="nombre" name="email" placeholder="ejemplo@gmail.com" required>
+                                            </div>
+                                        </div>
+        
+                                        <div class="form-group">
+                                            <div class="input-group mb-2">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text"><i class="fa fa-comment text-info"></i></div>
+                                                </div>
+                                                <textarea class="form-control" placeholder="Envianos tu Mensaje" required></textarea>
+                                            </div>
+                                        </div>
+        
+                                        <div class="text-center">
+                                            <input type="submit" value="Enviar" class="btn btn-info btn-block rounded-0 py-2">
+                                        </div>
+                                    </div>
+        
+                                </div>
+                            </form>
+                            <!--Form with header-->
+        
+        
+                        </div>
+            </div>
+      </main>
+      
+      <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+        <div class="container text-center">
+          <large>Sticky footers are the worst!</large>
         </div>
-        <div class="col-md-4">
-            <div class="btn-group" role="group" aria-label="Basic example">
-              <a class="btn btn-outline-success" href="index.html" roll="button">Index</a>
-              <a class="btn btn-outline-success" href="portfolio.html" roll="button">Portfolio</a>
-              <a class="btn btn-outline-success" href="contact.html" roll="button">Contact</a>
-            </div>
-            </div>
-          </nav>
-       
-                  
-                </div>
-            </div>
-        </div>
-    </body>
+      </footer>
+    </body>        
 </html>
