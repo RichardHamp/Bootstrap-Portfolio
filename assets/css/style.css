@@ -17,7 +17,6 @@ body {
     color: cornsilk;
     padding: 15px;
     border-radius: 15px;
-    text-align: center;
     font-size: xx-large;
 }
 
@@ -42,6 +41,10 @@ body {
 .navbuttons:hover {
     background-color: rgb(88, 141, 77); 
     color: cornsilk;
+}
+
+#btn-group {
+    float: left;
 }
 
 #main1 {/*argyle background*/
