@@ -22,16 +22,27 @@ html {
     left: 30%;
 }
 
-/*Declarations used by entire website*/
-
 body {
     font-family: 'Times New Roman', Times, serif;
+    height: 100%;
+    background: rgb(62, 66, 55);
 }
 
 .navbar-custom {
     background-color: gray;
     height: 140px;
 }
+
+#page-content {
+    flex: 1 0 auto;
+  }
+  
+  #sticky-footer {
+    flex-shrink: none;
+    width: 100%;
+    height: 60px;
+    border-top: 10px solid darkred;
+  }
 
 #nameplate {
     background-color: #6d695c;
@@ -41,13 +52,9 @@ body {
     color: cornsilk;
     padding: 15px;
     border-radius: 15px;
-    text-align: center;
     font-size: xx-large;
     
 }
-
-    /*buttons-entire site*/
-
 
 .navbuttons {
     font-size: small;
@@ -63,6 +70,12 @@ body {
     border-color: #6d695c;
     -webkit-transition-duration: 0.4s; 
     transition-duration: 0.4s;
+}
+
+.buttonX {
+    left: 70%;
+    position: absolute;
+    bottom: 0;
 }
 
 .navbuttons:hover {
@@ -94,7 +107,19 @@ body {
 }
 
 #main2 {/*argyle background*/
-    /* width: 100%; */
+    width: 100%;
+    height: 769px;
+    background-color: #6d695c;
+    background-image:
+        repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+        repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+        linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+        linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+    background-size: 70px 120px;
+}
+
+#main3 {/*argyle background*/
+
     height: 769px;
     background-color: #6d695c;
     background-image:
@@ -112,16 +137,31 @@ hr {/*just below 2nd header*/
     background-color: darkred;
 }
 
-
-
-/*About Page specific declarations*/
-
 #about-content {/*includes h2, img, <p>*/
     background-color: cornsilk;
     margin-top: 55px;
     margin-bottom: 55px;
     border-radius: 15px;
     padding: 30px;
+    width: 100%;
+}
+
+#contact-content {/*includes h2, img, <p>*/
+    background-color: cornsilk;
+    margin-top: 55px;
+    margin-bottom: 55px;
+    border-radius: 15px;
+    padding: 30px;
+    width: 700px;
+}
+
+#portfolio-content {
+    background-color: cornsilk;
+    margin-top: 55px;
+    margin-bottom: 55px;
+    border-radius: 15px;
+    padding: 30px;
+    width: 660px;
 }
 
 h2 {
@@ -149,36 +189,6 @@ p {
     margin-right: 20px;
 }
 
-/*Portfolio Page specific declarations*/
-
-#portfolio-content {/*includes h2 and all image links
-    position: absolute;
-    width: 600px;
-    height: auto;
-    background-color: cornsilk;
-    margin-top: 55px;
-    left: 50%;
-    margin-left: -330px;
-    margin-bottom: 10%;
-    border-radius: 15px;
-    padding: 30px;
-}
-
-#relative-portfolio {/*argyle background*/
-   /* width: 100%;
-    height: 760px;
-    position: relative;
-    top: 0;
-    bottom: 0;
-    background-color: #6d695c;
-    background-image:
-        repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
-        repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
-        linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
-        linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
-    background-size: 70px 120px;
-}
-
 .projects {
     height: 175px;
     margin: 5px;
@@ -189,38 +199,3 @@ p {
     border-width: 5px;
     border-color: #6d695c;
 }
-
-a {text-decoration:none;} /*gets rid of underscore between images*/
-
-/*Contact Page specific declarations*/
-
-/* #contact-content {/*includes h2 and input lines
-    width: 400px;
-    height: auto;
-    background-color: cornsilk;
-    margin-top: 55px;
-    left: 50%;
-    margin-left: -330px;
-    margin-bottom: 10%;
-    border-radius: 15px;
-    padding: 30px;
-} */
-
-/* #relative-contact {argyle background
-    width: 100%;
-    height: 100%;
-   
-    top: 0;
-    bottom: 0;
-    background-color: #6d695c;
-    background-image:
-        repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
-        repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
-        linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
-        linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
-    background-size: 70px 120px;
-} */
-
-/* .contact-input {
-    width: 100%;
-} */

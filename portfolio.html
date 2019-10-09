@@ -1,30 +1,71 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <title>Bootstrap Portfolio</title>
-    </head>
-    <body>
-        <nav class="navbar navbar-light bg-light">
-            <div class="col-md-1"></div>
-            <div class="col-md-4">
-            <a class="navbar-brand"><h1>Richard Hamp</h1></a>
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Bootstrap Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+
+  <body class="d-flex flex-column h-100">
+    <div class="navbar navbar-custom navbar-fixed-top" role="navigation">
+      <a class="navbar-brand navplate" id="nameplate">Richard Hamp</a>
+      <div class=row>
+        <div class="btn-group navbutt" role="group" aria-label="Basic example">
+          <a class="navbuttons" href="index.html" class="button">About</a>
+          <a class="navbuttons" href="portfolio.html" class="button">Portfolio</a>
+          <a class="navbuttons" href="contact.html" class="button">Contact</a>
         </div>
-        <div class="col-md-5">
-            <div class="btn-group" role="group" aria-label="Basic example">
-              <a class="btn btn-outline-success" href="index.html" roll="button">Index</a>
-              <a class="btn btn-outline-success" href="portfolio.html" roll="button">Portfolio</a>
-              <a class="btn btn-outline-success" href="contact.html" roll="button">Contact</a>
-            </div>
-            </div>
-          </nav>
-        <div class ="container">
-            <div class="row">
-                <div class="col-md-8">
-                    here
-                </div>
-            </div>
+      </div>
+    </div>
+
+    <main role="main" main id="main3" class="flex-shrink-0">
+      <div class="container" div id="portfolio-content">
+        <h2><b>Portfolio</b></h2>
+        <hr>
+        <div class="col-md-12">
+
+          <a href="https://scratch.mit.edu/projects/330400740" target="blank">
+            <img class=projects onMouseOver="this.src='assets/images/sharkz-pushed.png';"
+              onMouseOut="this.src='assets/images/sharkz.png';" src="assets/images/sharkz.png" alt="hover effect" />
+          </a>
+
+          <a href="https://www.amazon.com/Proof-30th-Street-Fiction-Anthology/dp/0996914420/ref=sr_1_1?keywords=proof+30th+street&qid=1570160010&sr=8-1"
+            target="blank">
+            <img class=projects onMouseOver="this.src='assets/images/proof-pushed.png';"
+              onMouseOut="this.src='assets/images/proof.png';" src="assets/images/proof.png" alt="hover effect" />
+          </a>
+
+          <a href="https://www.youtube.com/watch?v=TSu7MAGza7M" target="blank">
+            <img class=projects onMouseOver="this.src='assets/images/mouseover.png';"
+              onMouseOut="this.src='assets/images/yablo.png';" src="assets/images/yablo.png" alt="hover effect" />
+          </a>
+
+          <a href="http://papertoilet.com/" target="blank">
+            <img class=projects onMouseOver="this.src='assets/images/mouseover.png';"
+              onMouseOut="this.src='assets/images/papertoilet.png';" src="assets/images/papertoilet.png"
+              alt="hover effect" />
+          </a>
+
+          <a href="http://kingdomofloathing.com/" target="blank">
+            <img class=projects onMouseOver="this.src='assets/images/mouseover.png';"
+              onMouseOut="this.src='assets/images/loathing.jpg';" src="assets/images/loathing.jpg" alt="hover effect" />
+          </a>
+
+          <a href="https://theuselessweb.com/" target="blank">
+            <img class=projects onMouseOver="this.src='assets/images/mouseover.png';"
+              onMouseOut="this.src='assets/images/useless.jpg';" src="assets/images/useless.jpg" alt="hover effect" />
+          </a>
+          
         </div>
-    </body>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container"></div>
+    </footer>
+  </body>
+
 </html>
