@@ -61,6 +61,7 @@ body {
     width: 100%;
     min-height: 769px;
     height: 100%;
+    margin-bottom: 40px;
     background-color: #6d695c;
     background-image:
         repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
@@ -85,12 +86,14 @@ hr {/*line just below 2nd header*/
     padding: 30px;
 }
 
-#about-width {/*sizing of main content box*/
+#about-size {/*sizing of main content box*/
     width: 100%;
+    height: 100%;
 }
 
-#contact-width {/*sizing of main content box*/
+#contact-size {/*sizing of main content box*/
     width: 700px;
+    height: 100%;
 }
 
 #portfolio-width {/*sizing of main content box*/
