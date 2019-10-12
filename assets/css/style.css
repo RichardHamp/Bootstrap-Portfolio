@@ -115,6 +115,10 @@ p {
     margin-right: 20px;
 }
 
+.imageContainer {/*contains .projects*/
+    Text-Align: Center;
+}
+
 .projects {
     height: 175px;
     margin: 5px;
@@ -140,7 +144,3 @@ footer {
     background-color:rgb(62, 66, 55);
     border-top: 10px solid darkred;
   }
-
-.imageContainer {
-    Text-Align: Center;
-}
